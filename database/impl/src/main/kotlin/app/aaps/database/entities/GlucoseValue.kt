@@ -18,9 +18,7 @@ import java.util.TimeZone
         childColumns = ["referenceId"]
     )],
     indices = [
-        Index("id"),
         Index("nightscoutId"),
-        Index("sourceSensor"),
         Index("referenceId"),
         Index("timestamp")
     ]
@@ -95,6 +93,7 @@ data class GlucoseValue(
         MM_600_SERIES,
         EVERSENSE_E3,
         EVERSENSE_365,
+        MM_SIMPLERA,
         AIDEX,
         RANDOM,
         UNKNOWN,
